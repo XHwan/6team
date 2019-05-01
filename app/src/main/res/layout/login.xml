@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fafa00">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:hint="id" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/emailInput"
+            android:layout_centerHorizontal="true"
+            android:hint="Password" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordInput"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="100dp"
+            android:background="#fafa0"
+            android:text="Login" />
+
+    </RelativeLayout>
+</LinearLayout>
