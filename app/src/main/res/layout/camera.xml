@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/main"
+    tools:context=".Camera">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main"
+        android:padding="15dp"
+        android:text="카메라"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/search"
+        android:background="@drawable/btn_bg_ex"/>
+
+    <ImageButton
+        android:id="@+id/btn"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:background="@color/main"
+        android:src="@drawable/camera_btn"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        android:text="사진을 촬영하세요"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:src="@drawable/camera_btn"/>
+
+</LinearLayout>
+
+
