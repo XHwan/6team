@@ -23,10 +23,12 @@
             android:textSize="20dp" />
         <ImageButton
             android:id="@+id/btn"
-            android:layout_width="250dp"
+            android:layout_width="350dp"
             android:layout_height="150dp"
             android:scaleType="fitCenter"
 
+            android:padding="10dp"
+android:background="@color/main"
             android:layout_marginTop="170dp"
             android:layout_centerHorizontal="true"
             android:src="@drawable/camera"/>
@@ -35,12 +37,14 @@
 
         <ImageButton
             android:id="@+id/btn2"
-            android:layout_width="250dp"
+            android:layout_width="350dp"
+            android:padding="10dp"
             android:layout_below="@+id/btn"
             android:layout_height="150dp"
             android:layout_marginTop="50dp"
             android:scaleType="fitCenter"
 
+            android:background="@color/main"
             android:layout_centerHorizontal="true"
             android:src="@drawable/note"/>
 
