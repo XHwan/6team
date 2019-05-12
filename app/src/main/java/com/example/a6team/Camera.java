@@ -21,25 +21,8 @@ public class Camera extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera);
 
-        setup();
     }
 
 
-
-    private void setup()
-    {
-        btn = (ImageButton)findViewById(R.id.btn);
-        iv = (ImageView)findViewById(R.id.iv);
-        btn.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivity(intent);
-            }
-        });
-
-    }
 
 }
