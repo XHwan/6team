@@ -24,6 +24,7 @@ public class Main extends Activity
             public void onClick(View v) {
 
                 Intent intent=new Intent(Main.this,Voca.class);
+
                 startActivity(intent);
             }
         });

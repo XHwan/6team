@@ -19,11 +19,18 @@ public class Voca extends Activity implements TextToSpeech.OnInitListener {
     private TextToSpeech tts;
     private ImageButton btSpeak;
     private ImageButton naver;
+    private ImageButton next;
+    private ImageButton prev;
     private TextView getTextToSpeek;
+    private TextView speech;
+    private TextView ye;
 
     private ImageButton btn1;
     private ImageButton btn2;
     TextView voca;
+    TextView num1;
+    TextView num2;
+    static int number = 1;
     private View view1;
     private View view2;
 
@@ -36,9 +43,14 @@ public class Voca extends Activity implements TextToSpeech.OnInitListener {
 
         btSpeak = (ImageButton) findViewById(R.id.headset);
         btSpeak.setEnabled(false);
-
+num1 = (TextView)findViewById(R.id.num1);
+        num2 = (TextView)findViewById(R.id.num2);
         getTextToSpeek = (TextView)findViewById(R.id.voca);
+        ye = (TextView)findViewById(R.id.ye);
+        speech = (TextView)findViewById(R.id.speech);
         naver = (ImageButton)findViewById(R.id.naver);
+        next = (ImageButton)findViewById(R.id.next);
+        prev = (ImageButton)findViewById(R.id.prev);
         btn1 = (ImageButton)findViewById(R.id.shuffle);
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -63,8 +75,8 @@ public class Voca extends Activity implements TextToSpeech.OnInitListener {
 
                 speakOutNow();
 
-            }
-        });
+    }
+});
         naver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +85,42 @@ public class Voca extends Activity implements TextToSpeech.OnInitListener {
                 startActivity(intent);
 
 
+
+            }
+        });
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (number == 2) {
+
+                    Toast.makeText(getApplicationContext(), "마지막 단어입니다", Toast.LENGTH_LONG).show();
+                }
+                else{
+
+                    number ++;
+                    getTextToSpeek.setText("study");
+                    speech.setText("[ˈstʌdi]");
+                    ye.setText("Stop bothering me while I'm trying to study!");
+                    num1.setText("("+number + "/");
+                }
+
+            }
+        });
+        prev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (number == 1) {
+
+                    Toast.makeText(getApplicationContext(), "처음 단어입니다", Toast.LENGTH_LONG).show();
+                }
+                else{
+
+                    number --;
+                    getTextToSpeek.setText("debate");
+                    speech.setText("[dɪˈbeɪt]");
+                    ye.setText("Tell me your impression of the debate");
+                    num1.setText("("+number + "/");
+                }
 
             }
         });
