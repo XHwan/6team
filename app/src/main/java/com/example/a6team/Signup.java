@@ -2,9 +2,11 @@ package com.example.a6team;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -19,6 +21,7 @@ public class Signup extends Activity {
     private EditText editTextId;
     private EditText editTextPw;
     private EditText editTextname;
+    private Button Sign_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +30,9 @@ public class Signup extends Activity {
         editTextId = (EditText) findViewById(R.id.idInput);
         editTextname = (EditText) findViewById(R.id.name_input);
         editTextPw = (EditText) findViewById(R.id.passwordInput);
+
+        Sign_btn = (Button)findViewById(R.id.sign_btn);
+
 
     }
     public void insert(View view) {
@@ -48,7 +54,10 @@ public class Signup extends Activity {
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 loading.dismiss();
-                Toast.makeText(getApplicationContext(), "됨", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "가입되었습니다", Toast.LENGTH_LONG).show();
+
+                Intent intent=new Intent(Signup.this,Login.class);
+                startActivity(intent);
 
             }
             @Override
