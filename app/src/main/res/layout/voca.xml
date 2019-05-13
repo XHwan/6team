@@ -86,6 +86,7 @@ android:layout_alignParentLeft="true"
             android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/shuffle"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitCenter"
@@ -93,6 +94,7 @@ android:layout_alignParentLeft="true"
                 android:layout_weight="1"
                 android:src="@drawable/shuffle"/>
             <ImageButton
+                android:id="@+id/headset"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
@@ -101,6 +103,7 @@ android:layout_alignParentLeft="true"
                 android:layout_marginHorizontal="60dp"
                 android:src="@drawable/headset"/>
             <ImageButton
+                android:id="@+id/naver"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitCenter"
