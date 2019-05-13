@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"   android:layout_marginTop="100dp"
             android:orientation="horizontal">
             <EditText
-                android:id="@+id/emailInput"
+                android:id="@+id/idInput"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:layout_height="50dp"
@@ -49,6 +49,7 @@
             android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:password="true"
             android:layout_below="@+id/id_input"
             android:layout_centerHorizontal="true"
             android:hint="비밀번호" />
@@ -57,6 +58,7 @@
             android:id="@+id/passwordInput2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:password="true"
             android:layout_below="@+id/passwordInput"
             android:layout_centerHorizontal="true"
             android:hint="비밀번호 확인" />
@@ -65,36 +67,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/passwordInput2"
+
         android:layout_centerHorizontal="true"
         android:hint="이름" />
-        <EditText
-            android:id="@+id/passwordInput3"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/name_input"
-            android:layout_centerHorizontal="true"
-            android:hint="e-mail" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/passwordInput3"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="학력"
-                android:layout_marginLeft="5dp"
-                android:textSize="18dp"/>
-            ﻿<Spinner
-            android:id="@+id/spinner_year"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-        />
 
-        </LinearLayout>
 
 
         <Button
@@ -105,7 +82,8 @@
             android:layout_marginTop="30dp"
             android:background="@color/main"
             android:text="회원 가입"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:onClick="insert"/>
 
 
     </RelativeLayout>

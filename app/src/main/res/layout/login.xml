@@ -29,7 +29,7 @@
             android:src="@drawable/cheez"/>
 
         <EditText
-            android:id="@+id/emailInput"
+            android:id="@+id/idInput"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
@@ -40,7 +40,8 @@
             android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/emailInput"
+            android:layout_below="@+id/idInput"
+            android:password="true"
             android:layout_centerHorizontal="true"
             android:hint="비밀번호" />
 
