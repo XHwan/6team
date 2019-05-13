@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main"
+        android:padding="15dp"
+        android:text="  <                            치즈보카"
+        android:textAlignment="left"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/idserch_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="15dp"
+            android:text="ID 찾기"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/idserch_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:hint="이름" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/name_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:hint="이메일" />
+
+        <Button
+            android:id="@+id/idsearch_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/main"
+            android:text="검색"
+            android:textSize="16dp"
+            android:onClick="insert"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -16,28 +16,37 @@
         android:text="치즈보카"
         android:textAlignment="center"
         android:textColor="#000000"
-
         android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cheez" />
 
     <Button
         android:id="@+id/myvoca"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="마이노트"
-        android:background="@drawable/btn_bg_ex"/>
-    <Button
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:background="@drawable/btn_bg_ex"/>
-    <Button
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:text="내 단어장"
         android:background="@drawable/btn_bg_ex"/>
-
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="시험보기"
+        android:background="@drawable/btn_bg_ex"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="설정"
+        android:background="@drawable/btn_bg_ex"/>
 
 </LinearLayout>
