@@ -10,6 +10,7 @@ import android.widget.ImageView;
 public class Main extends Activity
 {
     Button btn = null;
+    Button voca_plus;
     ImageView iv = null;
 
     @Override
@@ -17,6 +18,7 @@ public class Main extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        voca_plus = (Button)findViewById(R.id.voca_plus);
 
         btn = (Button)findViewById(R.id.myvoca);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -28,7 +30,15 @@ public class Main extends Activity
                 startActivity(intent);
             }
         });
+        voca_plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent=new Intent(Main.this,Selection.class);
+
+                startActivity(intent);
+            }
+        });
 }
 
 

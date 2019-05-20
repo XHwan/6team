@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@color/main"
+    android:background="#fff"
     tools:context=".Camera">
 
     <TextView
@@ -19,31 +19,34 @@
         android:textSize="20dp" />
 
     <ImageView
-        android:id="@+id/iv"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/search"
-        android:background="@drawable/btn_bg_ex"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="150dp"
         android:scaleType="fitXY"
-        android:text="분석 결과"
-        android:textSize="17dp"
-        android:textColor="#000000"
-        android:gravity="center"/>
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/voac"
+        android:background="@drawable/btn_bg_ex"
+        android:onClick="loadImagefromGallery"/>
 
-    <TextView
+        <Button
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:text="텍스트 인식"
+        android:layout_marginTop="15dp"
+        android:background="@color/main"
+        android:layout_marginHorizontal="20dp"
+        android:onClick="processImage"/>
+
+
+        <TextView
+        android:id="@+id/OCRTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:scaleType="fitXY"
-        android:text="------"
-        android:textSize="17dp"
+        android:text="분석결과가 나타납니다"
         android:textColor="#000000"
-        android:gravity="center"/>
+        android:textSize="17dp" />
 
 </LinearLayout>
 
