@@ -22,6 +22,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.StringTokenizer;
 
 public class Camera extends Activity {
 
@@ -78,6 +79,13 @@ ImageView imgView;
         OCRresult = mTess.getUTF8Text();
         TextView OCRTextView = (TextView) findViewById(R.id.OCRTextView);
         OCRTextView.setText(OCRresult);
+
+        //여러가지의 구분자를 이용할 수 있다
+        StringTokenizer st = new StringTokenizer(OCRresult, " ");
+        String [] vocalist = new String[100]; int i=0;
+        while(st.hasMoreTokens()) {
+            vocalist[i] = st.nextToken();   i++;
+        }
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
