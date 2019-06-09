@@ -12,11 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Voca"></activity>
-        <activity android:name=".Signup"></activity>
-        <activity android:name=".Main"></activity>
         <activity android:name=".Camera"></activity>
+        <activity android:name=".Signup"></activity>
+        <activity android:name=".Write"></activity>
+        <activity android:name=".Test"></activity>
+        <activity android:name=".Test_pre"></activity>
+        <activity android:name=".MyBook_create"></activity>
+        <activity android:name=".SongDetail"></activity>
         <activity android:name=".Selection"></activity>
-        <activity android:name=".Login">
+        <activity android:name=".Login2"></activity>
+        <activity android:name=".Main"></activity>
+        <activity android:name=".Book_Plus"></activity>
+        <activity android:name=".MyBook_Test">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

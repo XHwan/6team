@@ -62,7 +62,7 @@
             android:id="@+id/speech"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="[]"
+            android:text="[ˈkʌltʃə(r)]"
             android:textColor="#666"
             android:layout_below="@+id/voca"
             android:layout_centerHorizontal="true"
@@ -78,7 +78,7 @@
             android:layout_below="@+id/speech"
             android:layout_marginTop="70dp"
             android:layout_centerHorizontal="true"
-            android:textSize="15dp"/>
+            android:textSize="23dp"/>
 
         <TextView
             android:id="@+id/ye"
@@ -90,7 +90,7 @@
             android:layout_below="@+id/mean"
             android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
-            android:textSize="15dp"/>
+            android:textSize="18dp"/>
 
 
             <ImageButton

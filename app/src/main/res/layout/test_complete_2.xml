@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main"
+        android:padding="15dp"
+        android:text="치즈보카"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <ListView
+
+        android:layout_below="@id/tab"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="메인으로"
+        android:textSize="22dp"
+        android:background="@color/main"/>
+
+</RelativeLayout>

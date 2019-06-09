@@ -31,21 +31,32 @@
         android:layout_marginTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
         android:layout_marginHorizontal="20dp"
         android:text="내 단어장"
+        android:textSize="18dp"
         android:background="@drawable/btn_bg_ex"/>
+
     <Button
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
         android:layout_marginHorizontal="20dp"
+
+        android:textSize="18dp"
+        android:background="@drawable/btn_bg_ex"
         android:text="시험보기"/>
     <Button
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
         android:layout_marginHorizontal="20dp"
         android:text="설정"
+        android:textSize="18dp"
         android:background="@drawable/btn_bg_ex"/>
+
+
 
 </LinearLayout>

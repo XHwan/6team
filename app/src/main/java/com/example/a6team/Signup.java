@@ -56,7 +56,7 @@ public class Signup extends Activity {
                 loading.dismiss();
                 Toast.makeText(getApplicationContext(), "가입되었습니다", Toast.LENGTH_LONG).show();
 
-                Intent intent=new Intent(Signup.this,Login.class);
+                Intent intent=new Intent(Signup.this,Login2.class);
                 startActivity(intent);
 
             }

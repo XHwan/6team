@@ -7,6 +7,30 @@
         <item>대학생</item>
     </string-array>
 
+        <integer-array name="resId">
+            <item>@drawable/o</item>
+            <item>@drawable/x</item>
+            <item>@drawable/o</item>
+            <item>@drawable/x</item>
+            <item>@drawable/o</item>
+        </integer-array>
 
+    <string-array name="title">
+        <item>culture</item>
+        <item>song</item>
+        <item>cook</item>
+        <item>apple</item>
+        <item>house</item>
+
+    </string-array>
+
+    <string-array name="content">
+        <item>문화</item>
+        <item>노래</item>
+        <item>요리사</item>
+        <item>사과</item>
+        <item>집</item>
+
+    </string-array>
 
 </resources>
