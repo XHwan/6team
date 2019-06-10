@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#fff">
+    android:background="#fff"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,137 +16,158 @@
         android:textColor="#000000"
 
         android:textSize="20dp" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-
-    <TextView
-        android:id="@+id/num1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(1/"
-        android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:textColor="#000000"
-
-        android:textSize="14dp" />
-
-    <TextView
-        android:id="@+id/num2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2)"
-        android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:textColor="#000000"
-
-        android:textSize="14dp" />
-</LinearLayout>
 
         <TextView
             android:id="@+id/voca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="culture"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="42dp" />
+        <TextView
+            android:id="@+id/aa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="culture"
-            android:textColor="#000000"
-            android:layout_marginTop="100dp"
-            android:layout_centerHorizontal="true"
-            android:textSize="42dp"/>
+            android:layout_below="@+id/voca"
+            android:layout_toLeftOf="@+id/speech"
+            android:text="["
+            android:textColor="#666"
+            android:textSize="22dp" />
         <TextView
             android:id="@+id/speech"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="[ˈkʌltʃə(r)]"
-            android:textColor="#666"
             android:layout_below="@+id/voca"
             android:layout_centerHorizontal="true"
-            android:textSize="22dp"/>
-
+            android:text="ˈkʌltʃə(r)"
+            android:textAlignment="center"
+            android:textColor="#666"
+            android:textSize="22dp" />
         <TextView
-            android:id="@+id/mean"
+            android:id="@+id/aba"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/voca"
+            android:layout_toRightOf="@+id/speech"
+            android:text="]"
+            android:textColor="#666"
+            android:textSize="22dp" />
 
-            android:text="문화"
-            android:textColor="#000000"
+        <LinearLayout
+            android:id="@+id/mean_la"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/speech"
-            android:layout_marginTop="70dp"
-            android:layout_centerHorizontal="true"
-            android:textSize="23dp"/>
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/mean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="뜻 1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="23dp" />
+            <TextView
+                android:id="@+id/mean2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="뜻 2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="23dp" />
+            <TextView
+                android:id="@+id/mean3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="뜻 3"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+
+
 
         <TextView
             android:id="@+id/ye"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:text="Tell me your impression of the culture"
-            android:textColor="#000000"
-            android:layout_below="@+id/mean"
-            android:layout_marginTop="10dp"
-            android:layout_centerHorizontal="true"
-            android:textSize="18dp"/>
-
-
-            <ImageButton
-                android:id="@+id/prev"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/arrow2"
-                android:background="#fff"/>
-            <ImageButton
-                android:id="@+id/next"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/arrow"
-                android:background="#fff"/>
-
-        <LinearLayout
-            android:layout_below="@id/ye"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/mean_la"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Tell me your impression of the culture"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/ye2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ye"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="한글 예문"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ye"
             android:layout_marginTop="200dp"
             android:layout_marginBottom="100dp"
+            android:orientation="horizontal"
             android:paddingHorizontal="40dp"
-            android:orientation="horizontal">
+            android:textAlignment="center">
 
             <ImageButton
                 android:id="@+id/shuffle"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:background="#fff"
                 android:layout_weight="1"
-                android:src="@drawable/shuffle"/>
+                android:background="#fff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/shuffle" />
+
             <ImageButton
                 android:id="@+id/headset"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:scaleType="fitCenter"
-                android:background="#fff"
-                android:layout_weight="1"
                 android:layout_marginHorizontal="60dp"
-                android:src="@drawable/headset"/>
+                android:layout_weight="1"
+                android:background="#fff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/headset" />
+
             <ImageButton
                 android:id="@+id/naver"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:background="#fff"
                 android:layout_weight="1"
-                android:src="@drawable/naver"/>
+                android:background="#fff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/naver" />
         </LinearLayout>
-
-
 
 
     </RelativeLayout>

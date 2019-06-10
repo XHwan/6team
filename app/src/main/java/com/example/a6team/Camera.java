@@ -80,8 +80,9 @@ ImageView imgView;
         TextView OCRTextView = (TextView) findViewById(R.id.OCRTextView);
         OCRTextView.setText(OCRresult);
 
+        OCRresult = OCRresult.toLowerCase();
         //여러가지의 구분자를 이용할 수 있다
-        StringTokenizer st = new StringTokenizer(OCRresult, " ");
+        StringTokenizer st = new StringTokenizer(OCRresult, "\n ");
         String [] vocalist = new String[100]; int i=0;
         while(st.hasMoreTokens()) {
             vocalist[i] = st.nextToken();   i++;
